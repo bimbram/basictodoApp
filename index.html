@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>bimbram</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm bimo!</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:bim.bramantyo@gmail.com">email</a></li>
-        		<li><a href="https://github.com/bimbram">github.com/bimbram</a></li>
-			</ul>
-		</footer>
-	</body>
+    test!
+    <head>
+    
+        <script src="JS/app.js"> </script>
+    
+    </head>
+
+    <h1>Todo App</h1>    
+    
+    <div>
+        <input type="text" id="addTodo">
+        <button onclick="handler.addTodo()">add</button>
+   
+    </div>
+    
+    <div>
+        <input type="number" id="deleteTodoPosition">
+        <button onclick="handler.deleteTodo()">delete</button>
+    </div>
+    
+    <div>
+        <input type="number" id="changeTodoPosition">
+        <input type="text" id="changeTodoText">
+        <button onclick="handler.changeTodo()">change</button>
+    </div>
+    
+    <div>
+        <input type="number" id="toggleCompletedPosition">
+        <button onclick="handler.toggleCompleted()">completeTodo</button>
+    </div>
+    
+    
+    <div>
+        <button onclick="handler.toggleAll()">toggleAll</button>
+    </div>
+    
+    <div>
+        <ul id="listTodo">
+        
+        </ul>
+    
+    </div>
+    
 </html>
